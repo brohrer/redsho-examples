@@ -1,9 +1,9 @@
 [project]
 name = "sinc"
-version = "0.1.0"
+version = "0.1.1"
 description = "An example implementation of redsho optimizing the sinc function"
 readme = "README.md"
 requires-python = ">=3.12.0"
 dependencies = [
-    "redsho==0.2.*",
+    "redsho==0.3.1",
 ]

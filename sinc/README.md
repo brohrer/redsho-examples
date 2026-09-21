@@ -1,4 +1,4 @@
-# Example: Finding the maximum of *sinc* function
+# Example: Finding the maximum of a *sinc* function
 
 ![Animated demo of Redsho in operation on a 2D variant of the sinc function
 ](splash.gif?raw=true)
@@ -40,6 +40,8 @@ visualizations and explorations if you wish.
 And for a flourish, there is also a multi-panel visualization of the
 run, including a rendering of the evaluation function and illustration
 of the locations that were tried in `reports/visualization.png`.
+(The error value is inverted to represent instead the height of the
+function.)
 
 ![Fancier visualization of the completed run
 ](typical_visualization.png)

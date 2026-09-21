@@ -23,13 +23,13 @@ def main():
     visualize_run()
 
 
-def evaluate(args):
+def evaluate(x=0, y=0):
     """
     The objective function is a 2D variant of the sinc function.
     """
     x0 = 1
     y0 = 1.5
-    return -np.sinc(args["x"] - x0) * np.sinc(args["y"] - y0)
+    return -np.sinc(x - x0) * np.sinc(y - y0)
 
 
 if __name__ == "__main__":

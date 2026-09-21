@@ -473,11 +473,11 @@ wheels = [
 
 [[package]]
 name = "pyparsing"
-version = "3.3.2"
+version = "3.3.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f3/91/9c6ee907786a473bf81c5f53cf703ba0957b23ab84c264080fb5a450416f/pyparsing-3.3.2.tar.gz", hash = "sha256:c777f4d763f140633dcb6d8a3eda953bf7a214dc4eff598413c070bcdc117cbc", size = 6851574 }
+sdist = { url = "https://files.pythonhosted.org/packages/e4/11/b213bebff182584360cb8d17c72c1677fec5c5c228de439e63bcf8ab1c8f/pyparsing-3.3.3.tar.gz", hash = "sha256:928ae7e20211f3b6f3915a72f06a0cfd29ab9d24279dd6346b6b1a7146397d36", size = 1050487 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl", hash = "sha256:850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d", size = 122781 },
+    { url = "https://files.pythonhosted.org/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl", hash = "sha256:ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4", size = 126420 },
 ]
 
 [[package]]
@@ -494,15 +494,15 @@ wheels = [
 
 [[package]]
 name = "redsho"
-version = "0.2.1"
+version = "0.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bb/88/fe1f09da40bb73fe21a8a1ac461e1036441f7341059d3c0c0293e0805e21/redsho-0.2.1.tar.gz", hash = "sha256:0fd59333a3be562e8c35a2257c0136c3d930b1bdb144ab229991bbc5b4628a51", size = 427445 }
+sdist = { url = "https://files.pythonhosted.org/packages/8b/2d/4984e86d5b4a208505fa62dec5b81ecfecf325d4fc1349bd0ee1cfc348d4/redsho-0.3.1.tar.gz", hash = "sha256:cb4e6bb5517fb2dba8a96d8626e8d29f17024fb85c32fcb4f04b2d0964032845", size = 17233 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ad/c8/d8ae48b8754c9c97c4ff9f6e23efc977346194b480f6c36bf6e4cc7f9762/redsho-0.2.1-py3-none-any.whl", hash = "sha256:2027ea146508c2851469ccaf4659a04d50c758d7b12e331b6511358261a3a5d6", size = 13650 },
+    { url = "https://files.pythonhosted.org/packages/10/73/6e58fcb57e19d75b79a2d0535c5e7b50b56d7ce6b3aea8b7c6a3ad7fe382/redsho-0.3.1-py3-none-any.whl", hash = "sha256:8cacf0655d5e5eb69112b8e2fad2fa75dde1fbff25c8fc6ebd2356c13c02e72e", size = 12370 },
 ]
 
 [[package]]
@@ -514,7 +514,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "redsho", specifier = "==0.2.*" }]
+requires-dist = [{ name = "redsho", specifier = ">=0.3.1" }]
 
 [[package]]
 name = "six"
