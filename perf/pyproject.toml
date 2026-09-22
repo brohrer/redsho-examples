@@ -1,0 +1,10 @@
+[project]
+name = "perf"
+version = "0.1.0"
+description = "A compute-intensive usage of redsho to help measure performance"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "py-spy>=0.4.2",
+    "redsho==0.3.2",
+]
