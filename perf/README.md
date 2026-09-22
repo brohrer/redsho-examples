@@ -58,9 +58,15 @@ one of the worst offenders according to "OwnTime",
 followed closely by `deepcopy` and 
 `writerows`.
 
+![py-spy profiling of slow version of redshow, functions sorted by owntime
+](img/own_time_slow.png)
+
 Looking at the TotalTime, it appears that calls to
 variants of `draw` and `save` and other references to `Matplotlib` are
 slowing things down the most.
+
+![py-spy profiling of slow version of redshow, functions sorted by totaltime
+](img/total_time_slow.png)
 
 In this test, the results plot is re-drawn from scratch after each iteration.
 In addition the entire iteration history is re-generated after each
@@ -76,9 +82,15 @@ so I increased the number of iterations and ran it again.
 
 The "OwnTime" view shows that `deepcopy` is still the worst offender.
 
+![py-spy profiling of fast version of redshow, functions sorted by owntime
+](img/own_time_fast.png)
+
 The "TotalTime" vies shows that 
 even though the code is no longer writing csv's every iteration,
 copying is still involved in exploring new conditions to try.
+
+![py-spy profiling of fast version of redshow, functions sorted by totaltime
+](img/total_time_fast.png)
 
 This suggests that if I wanted to speed it up further, the place to focus
 would be substituting those `deepcopy` calls for something snappier.
