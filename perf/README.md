@@ -85,7 +85,7 @@ The "OwnTime" view shows that `deepcopy` is still the worst offender.
 ![py-spy profiling of fast version of redshow, functions sorted by owntime
 ](img/own_time_fast.png)
 
-The "TotalTime" vies shows that 
+The "TotalTime" views shows that 
 even though the code is no longer writing csv's every iteration,
 copying is still involved in exploring new conditions to try.
 
