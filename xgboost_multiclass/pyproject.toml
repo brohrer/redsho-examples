@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "palmerpenguins>=0.1.6",
-    "redsho>=0.3.2",
+    "redsho>=0.3.3",
     "scikit-learn>=1.9.1",
     "xgboost-cpu>=3.4.1",
 ]

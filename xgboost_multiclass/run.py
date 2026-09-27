@@ -9,8 +9,6 @@ from xgboost import XGBClassifier
 data = load_penguins()
 data["species"] = pd.Categorical(pd.factorize(data["species"])[0])
 
-print(data.columns)
-
 parameter_grid = {
     "gamma": [0, 1, 2, 4],
     "grow_policy": ["depthwise", "lossguide"],
@@ -40,6 +38,8 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=data["species"],
 )
 
+n_iter = 100
+
 
 def evaluate(
     *,
@@ -67,9 +67,30 @@ def evaluate(
         if predicted != actual:
             error += 1
 
-    print(f"error: {error}")  # , end="/r")
+    print(f"error: {error}", end="\r")
 
     return error
 
 
-lowest_error, best_parameters = optimize(parameter_grid, evaluate, verbose=False)
+print()
+print()
+
+error, params = optimize(
+    parameter_grid,
+    evaluate,
+    n_iter=n_iter,
+    update_plots=False,
+    verbose=False,
+)
+
+print()
+print()
+print(f"Lowest mean absolute error found: {error}")
+print("at parameter values:")
+for k, v in params.items():
+    if k == "error":
+        continue
+    print(f"    {k}: {v}")
+
+print()
+print()
