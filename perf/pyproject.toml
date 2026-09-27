@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "py-spy>=0.4.2",
-    "redsho==0.3.2",
+    "redsho>=0.3.3",
 ]

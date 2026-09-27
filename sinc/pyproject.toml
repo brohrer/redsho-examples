@@ -5,5 +5,5 @@ description = "An example implementation of redsho optimizing the sinc function"
 readme = "README.md"
 requires-python = ">=3.12.0"
 dependencies = [
-    "redsho==0.3.1",
+    "redsho>=0.3.3",
 ]

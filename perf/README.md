@@ -9,7 +9,7 @@ further streamlining.
 In `run.py`, a lightweight computation with 6 parameters is used as a
 way to generate rapid iterations and ensure that most of the computation
 time is due to redsho operations. Assigning 5 possible values to each
-parameter gives 5^6 over 15 thousand permutations and ensures that there
+parameter gives over 15 thousand permutations and ensures that there
 will be enough iterations to allow for accurate measurement.
 
 Measuring the elapsed time for the loop and specifying the number of
